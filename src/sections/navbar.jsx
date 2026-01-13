@@ -73,7 +73,7 @@ function NavScrollExample() {
 
         
       <a
-        href="/resume.pdf"
+        href="/Resume.pdf"
         download
         className="resume-btn"
       >
