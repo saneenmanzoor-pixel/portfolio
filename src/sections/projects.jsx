@@ -1,12 +1,12 @@
 import "./styles/projects.css";
-import project1 from "../assets/projects/eventx.jpg";
-import project2 from "../assets/projects/shoperkart.jpg";
-import project3 from "../assets/projects/dashboard.jpg";
-import project4 from "../assets/projects/growup.jpg";
-import project5 from "../assets/projects/toyland.jpg";
-import project6 from "../assets/projects/emarald.jpg";
-import project7 from "../assets/projects/eclat.jpg";
-import project8 from "../assets/projects/brewlett.jpg";
+import project1 from "/projects/eventx.jpg";
+import project2 from "/projects/shoperkart.jpg";
+import project3 from "/projects/dashboard.jpg";
+import project4 from "/projects/growup.jpg";
+import project5 from "/projects/toyland.jpg";
+import project6 from "/projects/emarald.jpg";
+import project7 from "/projects/eclat.jpg";
+import project8 from "/projects/brewlett.jpg";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 

@@ -1,5 +1,5 @@
 import "./styles/about.css";
-import about from "../assets/about.png";
+import about from "/about.png";
 import { motion } from "framer-motion";
 import { fadeLeft, fadeRight, fadeUp } from "./utils/animation";
 

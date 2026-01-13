@@ -1,5 +1,5 @@
 import "./styles/experience.css";
-import company from "../assets/icons/company.png";
+import company from "/icons/company.png";
 import { motion } from "framer-motion";
 
 export default function Experience() {

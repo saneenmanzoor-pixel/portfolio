@@ -1,5 +1,5 @@
 import "./styles/hero-section.css";
-import profile from "../assets/profile.jpg";
+import profile from "/profile.jpg";
 import { motion } from "framer-motion";
 import {
   fadeUp,

@@ -1,11 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./styles/contact.css";
 
-import gmailIcon from "../assets/icons/gmail.svg";
-import linkedinIcon from "../assets/icons/linkedin.svg";
-import githubIcon from "../assets/icons/github-dark.svg";
-import behanceIcon from "../assets/icons/behance-logo.svg";
-import contactImage from "../assets/contact.png";
+
 
 import { motion } from "framer-motion";
 
@@ -69,7 +65,7 @@ export default function Contact() {
                 to="mailto:saneenmanzoor@gmail.com"
                 className="contact-link"
               >
-                <img src={gmailIcon} alt="Email" />
+                <img src="/icons/gmail.svg" alt="Email" />
                 saneenmanzoor@gmail.com
               </NavLink>
             </motion.div>
@@ -80,7 +76,7 @@ export default function Contact() {
                 target="_blank"
                 className="contact-link"
               >
-                <img src={linkedinIcon} alt="LinkedIn" />
+                <img src="/icons/linkedin.svg" alt="LinkedIn" />
                 /in/saneenmanzoor
               </NavLink>
             </motion.div>
@@ -91,7 +87,7 @@ export default function Contact() {
                 target="_blank"
                 className="contact-link"
               >
-                <img src={githubIcon} alt="GitHub" />
+                <img src="/icons/github-dark.svg" alt="GitHub" />
                 /saneenmanzoor-pixel
               </NavLink>
             </motion.div>
@@ -102,7 +98,7 @@ export default function Contact() {
                 target="_blank"
                 className="contact-link"
               >
-                <img src={behanceIcon} alt="GitHub" />
+                <img src="/icons/behance-logo.svg" alt="GitHub" />
                 /saneenmanzoor1
               </NavLink>
             </motion.div>
@@ -115,7 +111,7 @@ export default function Contact() {
           variants={imageVariants}
         >
           <img
-            src={contactImage}
+            src="/contact.png"
             alt="Contact Illustration"
             className="img"
           />

@@ -7,19 +7,19 @@ import {
 } from "./utils/animation";
 
 // Frontend icons
-import html from "../assets/icons/html.svg";
-import css from "../assets/icons/css.svg";
-import js from "../assets/icons/js.svg";
-import react from "../assets/icons/react.svg";
-import bootstrap from "../assets/icons/boot.svg";
+import html from "/icons/html.svg";
+import css from "/icons/css.svg";
+import js from "/icons/js.svg";
+import react from "/icons/react.svg";
+import bootstrap from "/icons/boot.svg";
 
 // Design tools
-import figma from "../assets/icons/figma.svg";
-import xd from "../assets/icons/xd.svg";
+import figma from "/icons/figma.svg";
+import xd from "/icons/xd.svg";
 
 // Tools
-import github from "../assets/icons/github.svg";
-import vscode from "../assets/icons/vs.svg";
+import github from "/icons/github.svg";
+import vscode from "/icons/vs.svg";
 
 export default function Skills() {
   return (
