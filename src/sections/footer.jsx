@@ -1,5 +1,4 @@
 import "./styles/footer.css";
-import logo from "../assets/logo.svg";
 
 
 export default function Footer() {
@@ -9,7 +8,7 @@ export default function Footer() {
 
         {/* LEFT */}
         <div className="footer-left">
-          <img src={logo} alt="Saneen Logo" className="footer-logo" />
+          <img src="/logo-white.svg" alt="Saneen Logo" className="footer-logo" />
 
           <p className="footer-role">
             Frontend Developer | UI/UX Designer
