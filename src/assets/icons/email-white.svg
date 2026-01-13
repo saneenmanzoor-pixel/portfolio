@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+</style>
+<g>
+	<circle class="st0" cx="256" cy="256" r="246.5"/>
+</g>
+<g id="Page-1">
+	<g id="Icons-Communication" transform="translate(0.000000, -85.000000)">
+		<g id="gmail" transform="translate(0.000000, 85.000000)">
+			<path id="Shape" d="M384,128H128c-17.6,0-32,14.4-32,32v192c0,17.6,14.4,32,32,32h256c17.6,0,32-14.4,32-32V160
+				C416,142.4,401.6,128,384,128L384,128z M384,352h-32V211.2L256,272l-96-60.8V352h-32V160h19.2L256,227.2L364.8,160H384V352
+				L384,352z"/>
+		</g>
+	</g>
+</g>
+</svg>
