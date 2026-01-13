@@ -45,9 +45,7 @@ export default function Footer() {
               <img src="/icons/github.svg" alt="GitHub" />
             </a>
 
-            <a href="https://www.behance.net/saneenmanzoor1" target="_blank" rel="noreferrer">
-              <img src="/icons/behance.svg" alt="Behance" />
-            </a>
+            
           </div>
         </div>
 
@@ -58,3 +56,8 @@ export default function Footer() {
     </footer>
   );
 }
+
+
+<a href="https://www.behance.net/saneenmanzoor1" target="_blank" rel="noreferrer">
+              <img src="/icons/behance.svg" alt="Behance" />
+            </a>
