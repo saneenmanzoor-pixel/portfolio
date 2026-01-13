@@ -1,10 +1,6 @@
 import "./styles/footer.css";
-
 import logo from "../assets/logo.svg";
-import linkedinIcon from "../assets/icons/linkedin-white.svg";
-import mailIcon from "../assets/icons/email-white.svg";
-import githubIcon from "../assets/icons/github.svg";
-import behanceIcon from "../assets/icons/behance.svg";
+
 
 export default function Footer() {
   return (
@@ -39,19 +35,19 @@ export default function Footer() {
         <div className="footer-center">
           <div className="footer-socials">
             <a href="https://www.linkedin.com/in/saneenmanzoor" target="_blank" rel="noreferrer">
-              <img src={linkedinIcon} alt="LinkedIn" />
+              <img src="/icons/linkedin-white.svg" alt="LinkedIn" />
             </a>
 
             <a href="mailto:saneenmanzoor@gmail.com">
-              <img src={mailIcon} alt="Email" />
+              <img src="/icons/email-white.svg" alt="Email" />
             </a>
 
             <a href="https://github.com/saneenmanzoor-pixel" target="_blank" rel="noreferrer">
-              <img src={githubIcon} alt="GitHub" />
+              <img src="/icons/github.svg" alt="GitHub" />
             </a>
 
             <a href="https://www.behance.net/saneenmanzoor1" target="_blank" rel="noreferrer">
-              <img src={behanceIcon} alt="Behance" />
+              <img src="/icons/behance.svg" alt="Behance" />
             </a>
           </div>
         </div>
