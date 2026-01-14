@@ -86,6 +86,9 @@
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
+  .footer{
+    padding: 50px;
+  }
   .footer-content {
     flex-direction: column;
     gap: 30px;
@@ -95,5 +98,8 @@
   .footer-nav {
     justify-content: center;
     margin-bottom: 50px;
+    display: flex;
+    gap: 18px;
   }
+
 }
