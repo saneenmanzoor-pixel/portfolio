@@ -37,10 +37,12 @@ export default function Experience() {
     >
       <motion.div className="experience-card" variants={containerVariants}>
         {/* Title */}
-        <motion.h2 className="exp-title" variants={itemVariants}>
+        <motion.div className="exp" variants={itemVariants}>
+        <div className="exp-title" variants={itemVariants}>
           Experience
           <span className="exp-underline"></span>
-        </motion.h2>
+        </div>
+        </motion.div>
 
         {/* Role + Company */}
         <motion.div className="exp-header" variants={itemVariants}>

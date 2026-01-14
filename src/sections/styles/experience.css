@@ -18,7 +18,7 @@
 }
 
 /* Title */
-.exp-title {
+.exp .exp-title {
   font-family: "Google Sans", sans-serif;
   font-size: 36px;
   font-weight: 700;
@@ -112,59 +112,87 @@
 }
 
 
-/* Responsive */
-@media (max-width: 768px) {
-  .experience-section{
+/* ===============================
+   MOBILE RESPONSIVE (PHONES)
+   =============================== */
+@media (max-width: 480px) {
+
+  .experience-section {
     margin-top: 50px;
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+    padding: 10px;
   }
+
   .experience-card {
-    padding: 40px 40px;
+    padding: 28px 28px;
+    border-radius: 24px;
+    display: block;
+  }
+
+  /* Title */
+  .exp{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .exp .exp-title {
+    font-size: 26px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 0px;
+    }
+
+  .exp-underline {
+    width: 22px;
+    height: 3px;
+    display: flex;
+    justify-content: right;
+  }
+
+  /* Header */
+  .exp-header {
+    font-size: 16px;
+    gap: 10px;
+    justify-content: left;
+    text-align: left;
+    
+  }
+
+  .exp-role {
+    font-size: 18px;
+    text-align: left;
+    margin-right: 20px;
+  }
+
+  /* Company pill */
+  .exp-company {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 12px;
+    justify-content: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 8px;
   }
 
-  .exp-title {
-    font-size: 32px;
+  .exp-company img {
+    height: 20px;
   }
-  .exp-header{
-    gap: 5px;
-    margin-bottom: 25px;
-  }
-  .exp-header .exp-role{
-    font-size: 16px;
-    letter-spacing: -0.1px;
-    line-height: 24px;
-    font-weight: 400;
-    margin-bottom: 5px;
 
+  /* Duration */
+  .exp-duration {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 20px;
   }
-  .exp-company {
-  align-items: center;
-  gap: 8px;
-  background: #111;
-  padding: 4px 10px;
-  border-radius: 8px;
-  font-size: 14px;
-}
 
-.exp-company img {
-  width: auto;
-  height: 20px;
-  object-fit: contain;
-}
-.exp-duration{
-  font-size: 14px;
-  letter-spacing: -0.1px;
-  
-  margin-bottom: 5px;
-  margin-top: 7px;
-  margin-left: 5px;
-  
-}
-.exp-list li{
-  font-size: small;
-  margin-bottom: 0px;
-}
+  /* Bullet list */
+  .exp-list li {
+    font-size: 14px;
+    line-height: 1.45;
+    padding-left: 16px;
+  }
+
+  .exp-list li:hover {
+    transform: none; /* Disable hover shift on touch devices */
+  }
 }
