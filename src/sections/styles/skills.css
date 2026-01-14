@@ -115,6 +115,7 @@
     text-align: center;
     gap: 10px;
     display: block;
+    justify-content: center;
   }
 
   .skills-title {
@@ -132,12 +133,13 @@
   }
   .skills-row{
     gap: 10px;
+    justify-content: center;
   }
   .skill-pill{
     display: flex;
   align-items: center;
   gap: 5px;
-  padding: 5px 12px;
+  padding: 8px 12px;
   background: #111;
   border-radius: 8px;
   color: #eaeaea;
