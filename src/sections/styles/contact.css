@@ -95,10 +95,15 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .contact-section{
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
   .contact-card {
     flex-direction: column;
     padding: 40px 40px;
-    text-align: center;  }
+    text-align: center;
+  }
 
   .contact-title {
     font-size: 32px;

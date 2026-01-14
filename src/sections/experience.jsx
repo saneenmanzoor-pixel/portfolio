@@ -51,6 +51,7 @@ export default function Experience() {
           <div className="exp-company">
             <img src={company} alt="Futura Labs" />
           </div>
+          
         </motion.div>
 
         {/* Duration */}

@@ -89,10 +89,12 @@
   font-size: 14px;
   font-weight: 500;
   color: #eaeaea;
+  transform: translateY(-1px);
+  cursor: pointer;
 }
 .skill-pill:hover {
   background: #222;
-  transition: ease-in-out 0.3s;
+  transition: ease 0.15s;
 }
 
 /* Icon */
@@ -103,11 +105,50 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+  .skills-section{
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
   .skills-card {
+    flex-direction: column;
     padding: 40px 40px;
+    text-align: center;
+    gap: 10px;
+    display: block;
   }
 
   .skills-title {
     font-size: 32px;
+
+
+  }
+  .skills-group h3{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+  }
+  .skills-group2 h3{
+    font-size: 20px;
+    font-weight: lighter;
+    margin-bottom: 12px;
+  }
+  .skills-row{
+    gap: 10px;
+  }
+  .skill-pill{
+    display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  background: #111;
+  border-radius: 8px;
+  color: #eaeaea;
+  }
+  .skill-pill img{
+    height: 20px;
+    width: 20px;
+  }
+  .txt{
+    font-size: 14px;
   }
 }
