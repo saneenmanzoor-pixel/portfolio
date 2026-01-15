@@ -58,7 +58,7 @@ const cardVariants = {
 
           {/* Project 1 */}
           <motion.div variants={cardVariants} className="card">
-            <NavLink to="https://behance.net" className="project-card light">
+            <NavLink to="/projects/shopkart" className="project-card light">
               <img
                 src={project1}
                 alt="Event Management Website"
@@ -73,7 +73,7 @@ const cardVariants = {
           {/* Project 2 */}
           <motion.div variants={cardVariants} className="card">
           <NavLink
-            to="/projects/shopkart"
+            to=""
             className="project-card light">
             <img
               src={project2}
@@ -106,7 +106,7 @@ const cardVariants = {
           {/* Project 4 */}
           <motion.div variants={cardVariants} className="card">
           <NavLink
-            to="/projects/growup"
+            to="https://www.behance.net/gallery/242249323/Parenting-App-Case-Study-UIUX-Design"
             className="project-card light">
             <img
               src={project4}
