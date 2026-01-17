@@ -93,7 +93,7 @@ const cardVariants = {
           {/* Project 3 */}
           <motion.div variants={cardVariants} className="card">
           <NavLink
-            to="/projects/dashboard"
+            to="https://www.behance.net/gallery/242354045/App-Dashboard-UIUX-Design"
             className="project-card light">
             <img
               src={project3}
