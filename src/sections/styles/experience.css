@@ -13,10 +13,18 @@
   max-width: 1100px;
   border-radius: 36px;
   padding: 60px 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
+.experience-content{
+  max-width: 900px;
+  margin-right: 0px;
+  
+}
 /* Title */
 .exp .exp-title {
   font-family: "Google Sans", sans-serif;
@@ -115,12 +123,14 @@
 /* ===============================
    MOBILE RESPONSIVE (PHONES)
    =============================== */
-@media (max-width: 480px) {
+@media (max-width: 900px) {
+
 
   .experience-section {
-    margin-top: 50px;
+    margin-top: 70px;
     margin-bottom: 50px;
-    padding: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
 
   .experience-card {
@@ -140,6 +150,7 @@
     text-align: center;
     margin: 0px;
     }
+  
 
   .exp-underline {
     width: 22px;
