@@ -120,7 +120,7 @@ const cardVariants = {
           {/* Project 5 */}
           <motion.div variants={cardVariants} className="card">
           <NavLink
-            to="/projects/toyland"
+            to="https://www.behance.net/gallery/242563267/Toys-Ecommerce-Website-UIUX-Design"
             className="project-card light">
             <img
               src={project5}
