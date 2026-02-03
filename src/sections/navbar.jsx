@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "./styles/navbar.css";
 import { FiDownload } from "react-icons/fi";
-import resumePDF from "/resume.pdf";
+import resumePDF from "/Resume.pdf";
 
 
 /* KEEP THIS */
@@ -73,7 +73,7 @@ function NavScrollExample() {
 
         
       <a
-        href="/resume.pdf"
+        href="/Resume.pdf"
         download
         className="resume-btn"
       >
