@@ -30,13 +30,13 @@ export default function Experience() {
     <motion.section
       className="experience-section"
       id="experience"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
     >
       <motion.div className="experience-card" variants={containerVariants}>
-        <motion.div className="experience-content" variants={containerVariants}>
+        <motion.div className="experience-content"
+         variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: false, amount: 0.3 }}>
           {/* Title */}
           <motion.div className="exp" variants={itemVariants}>
           <motion.h2 className="exp-title" variants={itemVariants}>

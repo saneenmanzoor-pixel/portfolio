@@ -14,7 +14,7 @@ export default function About() {
           variants={fadeLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <motion.h2 variants={fadeUp} className="about-title">
             About Me
@@ -36,7 +36,7 @@ export default function About() {
           variants={fadeRight}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: false, amount: 0.3 }}
         >
           <img src={about} alt="About" className="img" />
         </motion.div>

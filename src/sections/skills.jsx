@@ -12,6 +12,13 @@ import css from "/icons/css.svg";
 import js from "/icons/js.svg";
 import react from "/icons/react.svg";
 import bootstrap from "/icons/boot.svg";
+import motions from "/icons/motion.svg";
+import tailwind from "/icons/tailwind.svg";
+
+// AI
+import claude from "/icons/claude.svg";
+import antigravity from "/icons/antigravity.svg";
+import cursor from "/icons/cursor.svg";
 
 // Design tools
 import figma from "/icons/figma.svg";
@@ -29,7 +36,7 @@ export default function Skills() {
         variants={staggerContainer}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true }}
+        viewport={{ once: false, amount: 0.3 }}
       >
         {/* Title */}
         <motion.h2 variants={fadeUp} className="skills-title">
@@ -44,11 +51,26 @@ export default function Skills() {
             className="skills-row"
             variants={staggerContainer}
           >
+            <Skill icon={react} label="React.js" />
             <Skill icon={html} label="HTML5" />
             <Skill icon={css} label="CSS3" />
             <Skill icon={js} label="JavaScript" />
-            <Skill icon={react} label="React.js" />
             <Skill icon={bootstrap} label="Bootstrap" />
+            <Skill icon={motions} label="Motion" />
+            <Skill icon={tailwind} label="Tailwind CSS" />
+          </motion.div>
+        </motion.div>
+
+        {/* AI */}
+        <motion.div variants={fadeUp} className="skills-group">
+          <h3>AI Tools</h3>
+          <motion.div
+            className="skills-row"
+            variants={staggerContainer}
+          >
+            <Skill icon={claude} label="Claude" />
+            <Skill icon={antigravity} label="Antigravity" />
+            <Skill icon={cursor} label="Cursor" />
           </motion.div>
         </motion.div>
 

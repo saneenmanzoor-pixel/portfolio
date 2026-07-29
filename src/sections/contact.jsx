@@ -1,24 +1,15 @@
 import { NavLink } from "react-router-dom";
 import "./styles/contact.css";
+import {
+  staggerContainer,  
+} from "./utils/animation"; 
 
 
 
 import { motion } from "framer-motion";
 
 export default function Contact() {
-  // Animation variants
-  const containerVariants = {
-    hidden: { opacity: 0, y: 60 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeOut",
-        staggerChildren: 0.15,
-      },
-    },
-  };
+  
 
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -42,14 +33,14 @@ export default function Contact() {
     <motion.section
       className="contact-section"
       id="contact"
-      variants={containerVariants}
+      variants={staggerContainer}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.3 }}
     >
-      <motion.div className="contact-card" variants={containerVariants}>
+      <motion.div className="contact-card" variants={staggerContainer}>
         {/* LEFT CONTENT */}
-        <motion.div className="contact-left" variants={containerVariants}>
+        <motion.div className="contact-left" variants={staggerContainer}>
           <motion.h2 className="contact-title" variants={itemVariants}>
             Contact Me
             <span className="contact-underline"></span>

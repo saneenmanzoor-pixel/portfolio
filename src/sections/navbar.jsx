@@ -6,6 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import "./styles/navbar.css";
 import { FiDownload } from "react-icons/fi";
 import resumePDF from "/Resume.pdf";
+import Downloads from "/Downloads.svg";
 
 
 /* KEEP THIS */
@@ -38,14 +39,20 @@ function NavScrollExample() {
   };
 
   /* ✅ ADD THIS FUNCTION */
-  const handleScroll = (id) => {
-    const section = document.getElementById(id);
-    if (!section || !window.lenis) return;
+const handleScroll = (id) => {
+  const section = document.getElementById(id);
+  if (!section) return;
 
-    window.lenis.scrollTo(section, {
-      offset: -80, // navbar height
-    });
-  };
+  // 1. Calculate the position of the section relative to the page
+  const elementPosition = section.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.scrollY - 80; // Subtracts your 80px navbar height
+
+  // 2. Use native window.scrollTo with smooth behavior
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+};
 
   return (
     <Navbar expand="lg" className="px-lg-5 main fixed-top">
@@ -78,7 +85,7 @@ function NavScrollExample() {
         className="resume-btn"
       >
         <p className="text1 m-0">Resume</p>
-        <FiDownload className="resume-icon" />
+        <img src={Downloads} className="resume-icon" />
       </a>
 
       </Container>
