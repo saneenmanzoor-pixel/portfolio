@@ -1,5 +1,5 @@
 import "./styles/hero-section.css";
-import profile from "/profile.jpg"; /*[cite: 1] */
+import profile from "/profile.webp"; /*[cite: 1] */
 import { motion, useScroll, useTransform } from "framer-motion";
 import {
   fadeUp,

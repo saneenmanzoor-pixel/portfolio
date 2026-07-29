@@ -102,7 +102,7 @@ export default function Contact() {
           variants={imageVariants}
         >
           <img
-            src="/contact.png"
+            src="/contact.webp"
             alt="Contact Illustration"
             className="img"
           />
