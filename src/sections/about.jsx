@@ -23,7 +23,7 @@ export default function About() {
 
           <motion.p variants={fadeUp} className="about-description">
             I’m a <strong className="str">Frontend Developer</strong> skilled in
-            <strong className="str"> HTML, CSS, Bootstrap, JavaScript, and React.js</strong>.
+            <strong className="str"> React JS, HTML, CSS, JavaScript and Bootstrap</strong>.
             I enjoy creating <strong className="str"> responsive UI</strong> and translating
             design concepts into <strong className="str"> real-world web applications</strong>
             using <strong className="str">modern frontend tools.</strong>
