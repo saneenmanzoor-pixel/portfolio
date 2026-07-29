@@ -51,7 +51,7 @@ export default function Skills() {
             className="skills-row"
             variants={staggerContainer}
           >
-            <Skill icon={react} label="React.js" />
+            <Skill icon={react} label="React JS" />
             <Skill icon={html} label="HTML5" />
             <Skill icon={css} label="CSS3" />
             <Skill icon={js} label="JavaScript" />
