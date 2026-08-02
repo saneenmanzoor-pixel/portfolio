@@ -64,7 +64,7 @@ export default function Experience() {
 
           {/* Duration */}
           <motion.p className="exp-duration" variants={itemVariants}>
-            2025 – Present
+            2025 – 2026
           </motion.p>
 
           {/* Description */}
