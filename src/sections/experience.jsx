@@ -53,7 +53,7 @@ export default function Experience() {
           {/* Role + Company */}
           <motion.div className="exp-header" variants={itemVariants}>
             <h3 className="exp-role">
-              Frontend Developer & UI/UX Designer Intern -
+              Frontend Developer & UI/UX Designer -
             </h3>
 
             <div className="exp-company">
