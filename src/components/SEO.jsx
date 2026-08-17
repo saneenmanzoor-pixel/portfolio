@@ -35,6 +35,9 @@ export default function SEO({
       <meta name="author" content="Saneen Manzoor" />
       {/* robots: explicit allow for all crawlers, including GPTBot, Bingbot */}
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+      {/* Google Search Console ownership verification */}
+      <meta name="google-site-verification" content="tNQKvvzOVgz93aH2Ru2-Ph3JrNgUXxXHRFKx2HT0VZs" />
+
 
       {/* ── Canonical URL ─────────────────────────────────────────────────── */}
       {/* Canonical prevents Vercel preview deployments from diluting PageRank */}
