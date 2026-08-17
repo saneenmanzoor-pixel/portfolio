@@ -2,9 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
+
+    <!-- ── Favicon ──────────────────────────────────────────────────── -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.svg" />
+
+    <!-- ── No-JS Meta Fallbacks ─────────────────────────────────────
+         These tags are read by crawlers BEFORE JavaScript executes.
+         react-helmet-async will overwrite them once React mounts.
+         This ensures zero-delay indexing for search bots.          -->
+    <title>Saneen Manzoor | Frontend Developer</title>
+    <meta name="description" content="Frontend Developer specializing in React JS, UI/UX Design, and responsive web interfaces. View projects and hire Saneen Manzoor." />
+    <meta name="author" content="Saneen Manzoor" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <link rel="canonical" href="https://saneenmanzoor.vercel.app" />
+
+    <!-- ── Open Graph Fallbacks (for link-preview crawlers like LinkedIn) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://saneenmanzoor.vercel.app" />
+    <meta property="og:title" content="Saneen Manzoor | Frontend Developer" />
+    <meta property="og:description" content="Frontend Developer specializing in React JS, UI/UX Design, and responsive web interfaces." />
+    <meta property="og:image" content="https://saneenmanzoor.vercel.app/og-image.png" />
+    <meta property="og:site_name" content="Saneen Manzoor" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- ── Twitter Card Fallbacks ─────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Saneen Manzoor | Frontend Developer" />
+    <meta name="twitter:description" content="Frontend Developer specializing in React JS, UI/UX Design, and responsive web interfaces." />
+    <meta name="twitter:image" content="https://saneenmanzoor.vercel.app/og-image.png" />
+
+    <!-- ── Mobile / PWA ───────────────────────────────────────────── -->
+    <meta name="theme-color" content="#0a0a0a" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Saneen Manzoor" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <!-- ── Performance: Font Preconnect ──────────────────────────────
+         Preconnect eliminates DNS + TCP + TLS round-trips for Google Fonts,
+         reducing LCP (Largest Contentful Paint) by ~200-400ms.          -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- ── Performance: LCP Image Preload ────────────────────────────
+         Preloading profile.webp tells the browser to fetch the hero image
+         immediately, before CSS is parsed. Directly improves LCP score. -->
+    <link
+      rel="preload"
+      as="image"
+      href="/profile.webp"
+      type="image/webp"
+      fetchpriority="high"
+    />
   </head>
   <body>
     <div id="root"></div>

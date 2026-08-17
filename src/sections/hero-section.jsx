@@ -46,7 +46,16 @@ const contentOpacity = useTransform(scrollY, [0, 350], [1, 0]);
           >
             {/* Profile Image */}
             <motion.div className="profile-circle" variants={scaleIn}> {/*[cite: 1] */}
-              <img src={profile} alt="Profile" /> {/*[cite: 1] */}
+              {/* LCP image: fetchpriority=high tells browser to load this before other assets.
+                  width/height prevent CLS by reserving layout space before image loads. */}
+              <img
+                src={profile}
+                alt="Saneen Manzoor – Frontend Developer"
+                width={320}
+                height={320}
+                fetchpriority="high"
+                decoding="async"
+              /> {/*[cite: 1] */}
             </motion.div>
 
             {/* Title */}

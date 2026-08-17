@@ -38,7 +38,17 @@ export default function About() {
           whileInView="visible"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <img src={about} alt="About" className="img" />
+          {/* loading=lazy defers off-screen image fetching — saves bandwidth and
+              speeds up above-the-fold paint. Explicit dimensions prevent CLS. */}
+          <img
+            src={about}
+            alt="Saneen Manzoor working on a frontend development project"
+            className="img"
+            width={480}
+            height={480}
+            loading="lazy"
+            decoding="async"
+          />
         </motion.div>
 
       </div>

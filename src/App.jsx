@@ -11,6 +11,9 @@ import Experience from './sections/experience';
 import Contact from './sections/contact';
 import Footer from './sections/footer';
 import Lenis from 'lenis';
+// SEO: head tag manager and structured data — mounted at app root
+import SEO from './components/SEO';
+import JsonLd from './components/JsonLd';
 
 
 
@@ -60,6 +63,11 @@ function App() {
 
   return (
     <>
+      {/* SEO: inject <title>, meta, OG, Twitter Card, and JSON-LD into <head>
+          Both components are rendered outside the router so they apply globally */}
+      <SEO />
+      <JsonLd />
+
       <BrowserRouter>
 
         <Navbar />

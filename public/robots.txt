@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Block access to build artifacts and private files
+Disallow: /dist/
+Disallow: /.git/
+
+# Sitemap location — submitted to Google Search Console
+Sitemap: https://saneenmanzoor.vercel.app/sitemap.xml
+
+# Vercel-specific: allow all Vercel internal bots
+User-agent: Vercel
+Allow: /

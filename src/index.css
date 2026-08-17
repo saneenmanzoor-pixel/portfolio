@@ -25,3 +25,81 @@ html.lenis, html.lenis body {
 .lenis-scrolling iframe {
   pointer-events: none;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   PERFORMANCE & CWV UTILITIES
+   SEO IMPACT: Core Web Vitals (LCP, CLS, INP) are direct Google ranking signals.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── GPU Compositing ──────────────────────────────────────────────────────
+   Forces the browser to promote animated elements to their own GPU layer.
+   Eliminates main-thread paint during Framer Motion scroll animations,
+   keeping Interaction to Next Paint (INP) under 200ms.                     */
+.gpu-accelerated,
+.hero-bg-layer,
+.hero-content,
+.profile-circle {
+  will-change: transform;
+  transform: translateZ(0);    /* triggers GPU layer creation */
+  backface-visibility: hidden; /* prevents flicker on Safari */
+}
+
+/* ── CLS Prevention: Aspect-Ratio Image Containers ───────────────────────
+   Reserves exact layout space before images load.
+   Keeps Cumulative Layout Shift (CLS) at 0.                                */
+.img-square {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.img-landscape {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* project card images: reserve space before WebP files load */
+.project-image {
+  aspect-ratio: 16 / 10;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* ── Reduced Motion: Accessibility + INP Guard ───────────────────────────
+   Google's INP metric penalises long animation frames.
+   Users with vestibular disorders prefer no animation (WCAG 2.1 AA).
+   This guard: disables all transitions when OS reduced-motion is on,
+   which also prevents accidental INP failures on low-powered devices.      */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Framer Motion respects this via its own reduced-motion hook,
+     but this CSS rule acts as a hard fallback for any missed cases */
+  .hero-bg-layer {
+    will-change: auto; /* release GPU layer when motion is off */
+  }
+}
+
+/* ── Font Display: Prevent FOIT (Flash of Invisible Text) ────────────────
+   font-display:swap is the correct CWV strategy: shows fallback font
+   immediately (no invisible text) then swaps to web font when ready.
+   Apply this in any @font-face declarations you add.                       */
+/* @font-face {
+   font-family: 'Inter';
+   font-display: swap;
+   src: url('/fonts/inter.woff2') format('woff2');
+} */

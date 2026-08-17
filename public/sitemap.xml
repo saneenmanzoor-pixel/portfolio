@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — Static sitemap for Saneen Manzoor's Portfolio SPA
+
+  SEO IMPACT:
+  - Tells Google exactly which URLs to crawl and their relative priority.
+  - <lastmod> signals freshness; Google re-crawls updated pages faster.
+  - <priority> 1.0 on the root ensures the homepage is the primary indexed page.
+  - Even for a SPA, section anchors (#about, #projects) help Google associate
+    search intent (e.g., "Saneen Manzoor projects") with the right page section.
+
+  After deployment:
+  1. Go to https://search.google.com/search-console
+  2. Add property: https://saneenmanzoor.vercel.app
+  3. Sitemaps → Submit: https://saneenmanzoor.vercel.app/sitemap.xml
+-->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+
+  <!-- ── Root / Landing Page (highest priority) ─────────────────────── -->
+  <url>
+    <loc>https://saneenmanzoor.vercel.app/</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <!-- priority 1.0 = most important page on this site -->
+    <priority>1.0</priority>
+  </url>
+
+  <!-- ── About Section ─────────────────────────────────────────────── -->
+  <url>
+    <loc>https://saneenmanzoor.vercel.app/#about</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ── Skills Section ────────────────────────────────────────────── -->
+  <url>
+    <loc>https://saneenmanzoor.vercel.app/#skills</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Projects Section ──────────────────────────────────────────── -->
+  <url>
+    <loc>https://saneenmanzoor.vercel.app/#projects</loc>
+    <lastmod>2026-08-17</lastmod>
+    <!-- projects change most frequently → weekly re-crawl hint -->
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- ── Experience Section ────────────────────────────────────────── -->
+  <url>
+    <loc>https://saneenmanzoor.vercel.app/#experience</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- ── Contact Section ───────────────────────────────────────────── -->
+  <url>
+    <loc>https://saneenmanzoor.vercel.app/#contact</loc>
+    <lastmod>2026-08-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
