@@ -39,20 +39,20 @@ function NavScrollExample() {
   };
 
   /* ✅ ADD THIS FUNCTION */
-const handleScroll = (id) => {
-  const section = document.getElementById(id);
-  if (!section) return;
+  const handleScroll = (id) => {
+    const section = document.getElementById(id);
+    if (!section) return;
 
-  // 1. Calculate the position of the section relative to the page
-  const elementPosition = section.getBoundingClientRect().top;
-  const offsetPosition = elementPosition + window.scrollY - 80; // Subtracts your 80px navbar height
+    // 1. Calculate the position of the section relative to the page
+    const elementPosition = section.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - 80; // Subtracts your 80px navbar height
 
-  // 2. Use native window.scrollTo with smooth behavior
-  window.scrollTo({
-    top: offsetPosition,
-    behavior: "smooth"
-  });
-};
+    // 2. Use native window.scrollTo with smooth behavior
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth"
+    });
+  };
 
   return (
     <Navbar expand="lg" className="px-lg-5 main fixed-top">
@@ -78,15 +78,15 @@ const handleScroll = (id) => {
           </Nav>
         </Navbar.Collapse>
 
-        
-      <a
-        href="/Resume.pdf"
-        download
-        className="resume-btn"
-      >
-        <p className="text1 m-0">Resume</p>
-        <img src={Downloads} className="resume-icon" />
-      </a>
+
+        <a
+          href="/Resume.pdf"
+          download
+          className="resume-btn"
+        >
+          <p className="text1 m-0">Resume</p>
+          <img src={Downloads} className="resume-icon" />
+        </a>
 
       </Container>
     </Navbar>

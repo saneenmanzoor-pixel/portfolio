@@ -8,6 +8,7 @@ import project6 from "/projects/emarald.webp";
 import project7 from "/projects/eclat.webp";
 import project8 from "/projects/brewlett.webp";
 import project9 from "/projects/sneak.webp";
+import project10 from "/projects/eden.webp";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "./utils/animation";
@@ -41,7 +42,7 @@ export default function Projects() {
           <span className="projects-underline"></span>
         </motion.h2>
         <motion.p className="projects-subtitle" variants={fadeUp}
-        initial="hidden" whileInView="visible"
+          initial="hidden" whileInView="visible"
         >Front End</motion.p>
 
         {/* Projects Grid */}
@@ -50,6 +51,18 @@ export default function Projects() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
+
+          {/* Project 1 */}
+          <motion.div variants={cardVariants} className="card">
+            <NavLink to="https://www.edenparadise.in" className="project-card light">
+              <img
+                src={project10}
+                alt="Eden Paradise"
+                className="project-image"
+              />
+            </NavLink>
+          </motion.div>
+
 
           {/* Project 1 */}
           <motion.div variants={cardVariants} className="card">
