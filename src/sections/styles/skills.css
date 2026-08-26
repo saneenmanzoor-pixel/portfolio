@@ -24,9 +24,9 @@
   font-weight: 700;
   display: inline-block;
   letter-spacing: -1.5px;
-  background: -webkit-linear-gradient(180deg,#BCBCBC, #FFFFFF, #FFFFFF, #FFFFFF, #BCBCBC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(180deg, #BCBCBC, #FFFFFF, #FFFFFF, #FFFFFF, #BCBCBC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 30px;
 }
 
@@ -43,7 +43,8 @@
 .skills-group {
   margin-bottom: 36px;
 }
-.skills-group2 h3{
+
+.skills-group2 h3 {
 
   font-family: "Google Sans", sans-serif;
   font-size: 22px;
@@ -62,19 +63,18 @@
   flex-wrap: wrap;
   gap: 14px;
 
-  
-  
+
+
 }
-.txt{
-    font-family: "Google Sans", sans-serif;
+
+.txt {
+  font-family: "Google Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
   display: inline-block;
-  background: -webkit-linear-gradient(180deg,#BCBCBC, #FFFFFF, #FFFFFF, #FFFFFF, #BCBCBC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: "Google Sans", sans-serif;
-    font-size: 14px;
+  background: -webkit-linear-gradient(180deg, #BCBCBC, #FFFFFF, #FFFFFF, #FFFFFF, #BCBCBC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Skill pill */
@@ -91,6 +91,7 @@
   transform: translateY(-1px);
   cursor: pointer;
 }
+
 .skill-pill:hover {
   background: #222;
   transition: ease 0.15s;
@@ -104,10 +105,11 @@
 
 /* Responsive */
 @media (max-width: 768px) {
-  .skills-section{
+  .skills-section {
     margin-bottom: 25px;
     margin-top: 25px;
   }
+
   .skills-card {
     flex-direction: column;
     padding: 40px 40px;
@@ -120,34 +122,40 @@
   .skills-title {
     font-size: 32px;
   }
-  .skills-group h3{
+
+  .skills-group h3 {
     font-size: 20px;
     font-weight: lighter;
     margin-bottom: 12px;
   }
-  .skills-group2 h3{
+
+  .skills-group2 h3 {
     font-size: 20px;
     font-weight: lighter;
     margin-bottom: 12px;
   }
-  .skills-row{
+
+  .skills-row {
     gap: 10px;
     justify-content: center;
   }
-  .skill-pill{
+
+  .skill-pill {
     display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 8px 12px;
-  background: #111;
-  border-radius: 8px;
-  color: #eaeaea;
+    align-items: center;
+    gap: 5px;
+    padding: 8px 12px;
+    background: #111;
+    border-radius: 8px;
+    color: #eaeaea;
   }
-  .skill-pill img{
+
+  .skill-pill img {
     height: 18px;
     width: 18px;
   }
-  .txt{
+
+  .txt {
     font-size: 12px;
   }
 }

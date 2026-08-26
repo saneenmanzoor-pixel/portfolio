@@ -54,6 +54,10 @@
          Preloading profile.webp tells the browser to fetch the hero image
          immediately, before CSS is parsed. Directly improves LCP score. -->
   <link rel="preload" as="image" href="/profile.webp" type="image/webp" fetchpriority="high" />
+  <!-- ── Performance: Hero Background Preload ──────────────────────────
+         Preloading bg.webp eliminates render-blocking for the hero background.
+         Without this, bg.webp loads after CSS parse, delaying hero paint.  -->
+  <link rel="preload" as="image" href="/bg.webp" type="image/webp" />
 </head>
 
 <body>

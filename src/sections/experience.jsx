@@ -31,7 +31,7 @@ export default function Experience() {
       className="experience-section"
       id="experience"
     >
-      <motion.div className="experience-card" variants={containerVariants}>
+      <div className="experience-card">
         <motion.div className="experience-content"
          variants={containerVariants}
       initial="hidden"
@@ -45,10 +45,7 @@ export default function Experience() {
           </motion.h2>
           </motion.div>
           
-          {/* <motion.h2 className="exp-title" variants={itemVariants}>
-              Experience
-              <span className="exp-underline"></span>
-            </motion.h2> */}
+
 
           {/* Role + Company */}
           <motion.div className="exp-header" variants={itemVariants}>
@@ -83,7 +80,7 @@ export default function Experience() {
             ))}
           </motion.ul>
         </motion.div>
-      </motion.div>
+      </div>
     </motion.section>
   );
 }

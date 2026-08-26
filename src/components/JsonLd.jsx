@@ -19,7 +19,7 @@ const SITE_URL = "https://saneenmanzoor.vercel.app";
 const SOCIAL_PROFILES = [
   "https://github.com/saneenmanzoor-pixel",           // ← confirmed from your code
   "https://www.linkedin.com/in/saneenmanzoor",        // ← update if different
-  "https://www.behance.net/saneenmanzoor",            // ← confirmed from your projects
+  "https://www.behance.net/saneenmanzoor1",           // ← aligned with contact.jsx
   "https://twitter.com/saneenmanzoor",                // ← update with real handle
 ];
 
@@ -80,7 +80,7 @@ export default function JsonLd() {
     description:
       "Portfolio of Saneen Manzoor, a Frontend Developer specializing in React JS and UI/UX Design.",
     inLanguage: "en-US",
-    dateModified: new Date().toISOString().split("T")[0], // today's date = fresh content signal
+    dateModified: "2026-08-26", // update manually on significant content changes
     mainEntity: personSchema,
     breadcrumb: {
       "@type": "BreadcrumbList",

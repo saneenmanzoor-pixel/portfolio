@@ -1,5 +1,6 @@
 .hero {
   min-height: 100vh;
+  min-height: 100svh; /* svh accounts for mobile browser chrome on 320px screens */
   display: flex;
   justify-content: center;
 
@@ -34,7 +35,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 500px;
 }
 
 .profile-circle img {
@@ -122,21 +122,20 @@
     background: -webkit-linear-gradient(180deg,#c6baff, #FFFFFF, #FFFFFF, #FFFFFF, #c6baff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-family: "Google Sans", sans-serif;
     margin: 0px;
 }
 
 .h1{
   margin-bottom: 0px;
 }
-.h2{
+.hero-lead{
   margin-top: 0px;
   margin-bottom: -5px;
 }
-.h3{
+.hero-body{
   margin-top: 5px;
   margin-bottom: 15px;
-  line-height: 20px;
+  line-height: 1.4;
 }
 
 /* ===============================
@@ -199,12 +198,12 @@
     margin-bottom: 4px;
   }
 
-  .h2 {
+  .hero-lead {
     margin-bottom: 2px;
   }
 
-  .h3 {
+  .hero-body {
     margin-bottom: 12px;
-    line-height: 18px;
+    line-height: 1.4;
   }
 }

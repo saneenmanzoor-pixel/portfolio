@@ -12,8 +12,6 @@ import project10 from "/projects/eden.webp";
 import { NavLink } from "react-router-dom";
 import { motion } from "framer-motion";
 import { fadeUp, staggerContainer } from "./utils/animation";
-import { Link } from "lucide-react";
-import { BiLogoGithub } from "react-icons/bi";
 
 
 
@@ -52,25 +50,33 @@ export default function Projects() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}>
 
-          {/* Project 1 */}
+          {/* Project 1 - Eden Paradise */}
           <motion.div variants={cardVariants} className="card">
             <NavLink to="https://www.edenparadise.in" className="project-card light">
               <img
                 src={project10}
                 alt="Eden Paradise"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
 
 
-          {/* Project 1 */}
+          {/* Project 2 - Aether Travel Booking */}
           <motion.div variants={cardVariants} className="card">
             <NavLink to="https://aether-travel-booking-web-v2.vercel.app" className="project-card light">
               <img
                 src={project1}
                 alt="Aether Travel Booking"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -87,6 +93,10 @@ export default function Projects() {
                 src={project2}
                 alt="Pulse Dashboard"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -99,6 +109,10 @@ export default function Projects() {
                 src={project9}
                 alt="Sneak Studio"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -126,6 +140,10 @@ export default function Projects() {
                 src={project3}
                 alt="Dashboard"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -139,6 +157,10 @@ export default function Projects() {
                 src={project4}
                 alt="GrowUp Parenting-app"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -153,6 +175,10 @@ export default function Projects() {
                 src={project5}
                 alt="Toys E-commerce Website"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -166,6 +192,10 @@ export default function Projects() {
                 src={project6}
                 alt="Tea E-commerce Website"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -180,6 +210,10 @@ export default function Projects() {
                 src={project7}
                 alt="Perfume E-commerce Website"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>
@@ -194,6 +228,10 @@ export default function Projects() {
                 src={project8}
                 alt="Coffee E-commerce Website"
                 className="project-image"
+                loading="lazy"
+                decoding="async"
+                width={600}
+                height={375}
               />
             </NavLink>
           </motion.div>

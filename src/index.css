@@ -1,12 +1,44 @@
-section {
-  scroll-margin-top: 80px; /* navbar height */
+/* Global background — moved here from about.css to avoid global override in a component file */
+
+#root {
+  background-color: #F5F5F7;
 }
+
+/* ── Skip Navigation Link (WCAG 2.4.1 — Level A) ─────────────────────────
+   Visually hidden until focused by keyboard. Lets screen-reader/keyboard
+   users jump past the navbar directly to main content.                    */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 9999;
+  padding: 10px 18px;
+  background: #7c5cff;
+  color: #fff;
+  font-family: "Google Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 0 0 10px 10px;
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+section {
+  scroll-margin-top: 80px;
+  /* navbar height */
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 /* Core Lenis Smooth Scroll Styles */
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -32,16 +64,16 @@ html.lenis, html.lenis body {
    ═══════════════════════════════════════════════════════════════════════════ */
 
 /* ── GPU Compositing ──────────────────────────────────────────────────────
-   Forces the browser to promote animated elements to their own GPU layer.
-   Eliminates main-thread paint during Framer Motion scroll animations,
-   keeping Interaction to Next Paint (INP) under 200ms.                     */
-.gpu-accelerated,
-.hero-bg-layer,
-.hero-content,
-.profile-circle {
+   Opt-in utility class — apply only to elements that actually animate.
+   Do NOT apply statically to hero elements that animate off-screen;
+   permanent GPU layers waste memory after the user scrolls past the hero.
+   Framer Motion manages layer promotion dynamically when needed.           */
+.gpu-accelerated {
   will-change: transform;
-  transform: translateZ(0);    /* triggers GPU layer creation */
-  backface-visibility: hidden; /* prevents flicker on Safari */
+  transform: translateZ(0);
+  /* triggers GPU layer creation */
+  backface-visibility: hidden;
+  /* prevents flicker on Safari */
 }
 
 /* ── CLS Prevention: Aspect-Ratio Image Containers ───────────────────────
@@ -78,6 +110,7 @@ html.lenis, html.lenis body {
    This guard: disables all transitions when OS reduced-motion is on,
    which also prevents accidental INP failures on low-powered devices.      */
 @media (prefers-reduced-motion: reduce) {
+
   *,
   *::before,
   *::after {
@@ -90,7 +123,8 @@ html.lenis, html.lenis body {
   /* Framer Motion respects this via its own reduced-motion hook,
      but this CSS rule acts as a hard fallback for any missed cases */
   .hero-bg-layer {
-    will-change: auto; /* release GPU layer when motion is off */
+    will-change: auto;
+    /* release GPU layer when motion is off */
   }
 }
 

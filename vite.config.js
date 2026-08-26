@@ -19,9 +19,9 @@ export default defineConfig({
           // Core React runtime — almost never changes
           "vendor-react": ["react", "react-dom"],
           // Animation libraries — chunked separately so they cache independently
-          "vendor-motion": ["framer-motion", "motion", "lenis"],
+          "vendor-motion": ["framer-motion", "lenis"],
           // UI libraries
-          "vendor-ui": ["bootstrap", "react-bootstrap", "lucide-react", "react-icons"],
+          "vendor-ui": ["bootstrap", "react-bootstrap"],
           // Router
           "vendor-router": ["react-router-dom"],
         },

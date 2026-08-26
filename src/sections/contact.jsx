@@ -1,16 +1,9 @@
 import { NavLink } from "react-router-dom";
 import "./styles/contact.css";
-import {
-  staggerContainer,  
-} from "./utils/animation"; 
-
-
-
+import { staggerContainer } from "./utils/animation";
 import { motion } from "framer-motion";
 
 export default function Contact() {
-  
-
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
@@ -47,7 +40,7 @@ export default function Contact() {
           </motion.h2>
 
           <motion.p className="contact-subtitle" variants={itemVariants}>
-            Interested in working together? Let’s connect.
+            Interested in working together? Let's connect.
           </motion.p>
 
           <motion.div className="contact-links">
@@ -65,6 +58,7 @@ export default function Contact() {
               <NavLink
                 to="https://www.linkedin.com/in/saneenmanzoor"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="contact-link"
               >
                 <img src="/icons/linkedin.svg" alt="LinkedIn" />
@@ -76,6 +70,7 @@ export default function Contact() {
               <NavLink
                 to="https://github.com/saneenmanzoor-pixel"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="contact-link"
               >
                 <img src="/icons/github-dark.svg" alt="GitHub" />
@@ -87,9 +82,10 @@ export default function Contact() {
               <NavLink
                 to="https://www.behance.net/saneenmanzoor1"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="contact-link"
               >
-                <img src="/icons/behance-logo.svg" alt="GitHub" />
+                <img src="/icons/behance-logo.svg" alt="Behance" />
                 /saneenmanzoor1
               </NavLink>
             </motion.div>
@@ -103,8 +99,12 @@ export default function Contact() {
         >
           <img
             src="/contact.webp"
-            alt="Contact Illustration"
+            alt="Contact illustration"
             className="img"
+            loading="lazy"
+            decoding="async"
+            width={240}
+            height={220}
           />
         </motion.div>
       </motion.div>

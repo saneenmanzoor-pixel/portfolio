@@ -9,7 +9,6 @@
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid rgb(255, 255, 255);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-
 }
 
 .linkss {
@@ -39,14 +38,7 @@
   border-radius: 10px;
 }
 
-.linkss .link::after {
-  color: #000;
-  background-color: #dbdbdb;
-  border-radius: 10px;
-}
-
-
-/* PERFECT FIT INDICATOR */
+/* Hover indicator pill */
 .nav-indicator {
   position: absolute;
   top: 5px;
@@ -55,18 +47,16 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-
   opacity: 0;
   transform: scale(0.95);
   transition:
     transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
     width 0.35s cubic-bezier(0.34, 1.56, 0.64, 1),
     opacity 0.2s ease;
-
   z-index: 1;
 }
 
-
+/* Resume download button */
 .resume-btn {
   background-color: #151515;
   border-radius: 14px;
@@ -75,20 +65,15 @@
   padding: 12px 18px;
   text-decoration: none;
   display: flex;
+  align-items: center;
+  gap: 6px;
   color: white;
-
 }
 
-.btn .gradient-text:hover {
-  border-radius: 14px;
-  background-color: #000;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.277);
+.resume-btn:hover {
+  background: #000;
+  color: white;
   transform: translateY(-2px);
-
-}
-
-.btn .gradient-text:active {
-  border: none;
 }
 
 .text1 {
@@ -97,33 +82,98 @@
   -webkit-text-fill-color: transparent;
   font-family: "Google Sans", sans-serif;
   font-size: 14px;
-  margin: 0px;
+  margin: 0;
   cursor: pointer;
-}
-
-.text1:active {
-  color: black;
-  font-family: "Google Sans", sans-serif;
-  font-size: 14px;
-  margin: 0px;
-  cursor: pointer;
-}
-
-
-
-.resume-btn:hover {
-  background: #000;
-  color: white;
-  transform: translateY(-2px);
 }
 
 .resume-icon {
   width: 16px;
-  margin-left: 5px;
 }
 
-@media (max-width: 900px) {
-  .resume-btn {
-    padding: 10px 12px;
+/* Focus-visible for keyboard nav */
+.link:focus-visible,
+.resume-btn:focus-visible {
+  outline: 2px solid #7c5cff;
+  outline-offset: 3px;
+  border-radius: 10px;
+}
+
+/* ── Mobile ─────────────────────────────────────────────────── */
+@media (max-width: 991px) {
+  .main {
+    height: auto;
+    padding: 12px 0;
   }
+
+  /* Collapsed nav links stack vertically */
+  .navbar-collapse .linkss {
+    flex-direction: column;
+    background: transparent;
+    margin: 8px 0 16px;
+    padding: 0;
+  }
+
+  .navbar-collapse .linkss .link {
+    padding: 10px 16px;
+    font-size: 15px;
+    margin-left: 0;
+  }
+
+  /* Hide hover indicator on mobile */
+  .nav-indicator {
+    display: none;
+  }
+
+  .resume-btn {
+    padding: 10px 14px;
+  }
+
+  /* Resume button inside the mobile overlay */
+  .mobile-resume-btn {
+    display: flex;
+    width: calc(100% - 32px);
+    margin: 4px 16px 16px;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+}
+
+/* Hide mobile resume btn on desktop */
+@media (min-width: 992px) {
+  .mobile-resume-btn {
+    display: none;
+  }
+}
+
+/* ── Custom Hamburger Toggle ─────────────────────────────────────────── */
+/* Strip Bootstrap's built-in icon and border so only our SVG shows */
+.custom-toggle {
+  border: none !important;
+  outline: none;
+  background: #f1f1f1;
+  padding: 8px 14px;
+  border-radius: 999px; /* pill shape */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  box-shadow: none !important;
+}
+
+.custom-toggle:hover {
+  background: #e4e4e4;
+}
+
+.custom-toggle:focus,
+.custom-toggle:focus-visible {
+  outline: 2px solid #7c5cff !important;
+  outline-offset: 3px;
+  box-shadow: none !important;
+}
+
+/* Hide Bootstrap's default icon — we supply our own SVG child */
+.custom-toggle .navbar-toggler-icon {
+  display: none;
 }
