@@ -1,5 +1,6 @@
 import "./styles/experience.css";
 import company from "/icons/company.png";
+import company2 from "/icons/company2.png";
 import { motion } from "framer-motion";
 
 export default function Experience() {
@@ -33,18 +34,18 @@ export default function Experience() {
     >
       <div className="experience-card">
         <motion.div className="experience-content"
-         variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: false, amount: 0.3 }}>
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: false, amount: 0.3 }}>
           {/* Title */}
           <motion.div className="exp" variants={itemVariants}>
-          <motion.h2 className="exp-title" variants={itemVariants}>
-            Experience
-            <span className="exp-underline"></span>
-          </motion.h2>
+            <motion.h2 className="exp-title" variants={itemVariants}>
+              Experience
+              <span className="exp-underline"></span>
+            </motion.h2>
           </motion.div>
-          
+
 
 
           {/* Role + Company */}
@@ -56,7 +57,7 @@ export default function Experience() {
             <div className="exp-company">
               <img src={company} alt="Futura Labs" />
             </div>
-            
+
           </motion.div>
 
           {/* Duration */}
@@ -73,6 +74,40 @@ export default function Experience() {
               "Ensured mobile-first and responsive design across different screen sizes",
               "Focused on clean layout, accessibility, and user-friendly design",
               "Built multiple frontend projects using modern web technologies",
+            ].map((item, index) => (
+              <motion.li key={index} variants={itemVariants}>
+                {item}
+              </motion.li>
+            ))}
+            <span className="exp-underline2"></span>
+          </motion.ul>
+
+
+
+          {/* Role + Company */}
+          <motion.div className="exp-header" variants={itemVariants}>
+            <h3 className="exp-role">
+              Visual Designer & Web Developer -
+            </h3>
+
+            <div className="exp-company">
+              <img src={company2} alt="Imaco" />
+            </div>
+
+          </motion.div>
+
+          {/* Duration */}
+          <motion.p className="exp-duration" variants={itemVariants}>
+            2021 – 2025
+          </motion.p>
+
+          {/* Description */}
+          <motion.ul className="exp-list">
+            {[
+              "Designed intuitive, responsive user interfaces and seamless user experiences for the company website, prioritizing customer engagement and accessibility.",
+              "Developed and maintained the company website using React, implementing custom components and ensuring high performance across devices.",
+              "Designed cohesive brand collateral, including business cards, letterheads, and promotional brochures, ensuring consistent visual identity across print materials.",
+              "Created engaging, high-impact social media posters and graphics tailored for multi-platform marketing campaigns.",
             ].map((item, index) => (
               <motion.li key={index} variants={itemVariants}>
                 {item}

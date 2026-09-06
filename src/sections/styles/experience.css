@@ -20,11 +20,12 @@
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
-.experience-content{
+.experience-content {
   max-width: 900px;
   margin-right: 0px;
-  
+
 }
+
 /* Title */
 .exp .exp-title {
   font-family: "Google Sans", sans-serif;
@@ -32,9 +33,9 @@
   font-weight: 700;
   display: inline-block;
   letter-spacing: -1.5px;
-  background: -webkit-linear-gradient(180deg,#BCBCBC, #FFFFFF, #FFFFFF, #FFFFFF, #BCBCBC);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(180deg, #BCBCBC, #FFFFFF, #FFFFFF, #FFFFFF, #BCBCBC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 }
 
@@ -44,6 +45,15 @@
   height: 3px;
   background: #7c5cff;
   margin-top: 8px;
+  border-radius: 10px;
+}
+
+.exp-underline2 {
+  display: block;
+  height: 1px;
+  background: #373737;
+  margin-top: 50px;
+  margin-bottom: 40px;
   border-radius: 10px;
 }
 
@@ -108,7 +118,8 @@
   font-weight: lighter;
   transition: transform 0.3s ease;
 }
-.exp-list li:hover{
+
+.exp-list li:hover {
   transform: translateX(6px);
 }
 
@@ -140,17 +151,18 @@
   }
 
   /* Title */
-  .exp{
+  .exp {
     text-align: center;
     margin-bottom: 30px;
   }
+
   .exp .exp-title {
     font-size: 32px;
     letter-spacing: -1px;
     text-align: center;
     margin: 0px;
-    }
-  
+  }
+
 
   .exp-underline {
     width: 22px;
@@ -165,7 +177,7 @@
     gap: 10px;
     justify-content: left;
     text-align: left;
-    
+
   }
 
   .exp-role {
@@ -204,6 +216,7 @@
   }
 
   .exp-list li:hover {
-    transform: none; /* Disable hover shift on touch devices */
+    transform: none;
+    /* Disable hover shift on touch devices */
   }
 }
